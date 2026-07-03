@@ -1,0 +1,117 @@
+.section {
+  width: 100%;
+  background-color: #faf7f8;
+  padding: 120px 0;
+  position: relative;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 36px;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 80px 60px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s var(--ease-smooth), transform 1s var(--ease-smooth);
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  color: var(--color-charcoal);
+  margin-bottom: 24px;
+}
+
+.highlight {
+  font-style: italic;
+  background: linear-gradient(to right, #C54B8C 0%, #E082A8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.description {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  color: var(--color-charcoal);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  display: flex;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input {
+  flex: 1;
+  padding: 16px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-charcoal);
+  background-color: #faf7f8;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  border-color: #F1C6DD;
+  box-shadow: 0 0 0 4px rgba(241, 198, 221, 0.2);
+}
+
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  background-color: #F1C6DD;
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 32px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s var(--ease-smooth);
+}
+
+.button:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 60px 30px;
+  }
+  
+  .form {
+    flex-direction: column;
+  }
+  
+  .button {
+    padding: 16px 32px;
+  }
+}
