@@ -38,10 +38,10 @@ export default function InstagramFeed() {
       <div className={styles.wrapper}>
         <div className={`${styles.header} ${isVisible ? styles.visible : ""}`}>
           <h2 className={styles.title}>
-            Inspire-se com <span className={styles.highlight}>histórias reais.</span>
+            No <span className={styles.highlight}>Instagram.</span>
           </h2>
           <p className={styles.subtitle}>
-            Acompanhe nossas coleções, bastidores e momentos especiais compartilhados por nossas clientes.
+            Bastidores, novas peças e noivas reais. Siga @kallahbridehouse.
           </p>
         </div>
 

@@ -5,15 +5,15 @@ import styles from "./Testimonials.module.css";
 
 const testimonials = [
   {
-    text: "Encontrar meu vestido foi muito mais do que uma compra. Foi uma experiência emocionante do início ao fim.",
+    text: "Experimentei em três ateliês antes. Na Kallah, soube na hora. O vestido caiu como se tivesse sido feito pra mim.",
     author: "Mariana S."
   },
   {
-    text: "O acabamento é impecável. Recebi inúmeros elogios no dia do casamento.",
+    text: "O tecido, a costura, o caimento. Tudo impecável. Recebi elogios a noite inteira.",
     author: "Isabela R."
   },
   {
-    text: "O atendimento foi excepcional e me senti acolhida em cada etapa.",
+    text: "Me senti acolhida desde o primeiro contato. Zero pressão, muita atenção.",
     author: "Fernanda A."
   }
 ];
@@ -44,7 +44,7 @@ export default function Testimonials() {
     <section ref={sectionRef} className={styles.section}>
       <div className={styles.wrapper}>
         <h2 className={`${styles.title} ${isVisible ? styles.visible : ""}`}>
-          Histórias que nos <span className={styles.highlight}>inspiram.</span>
+          Quem já <span className={styles.highlight}>vestiu.</span>
         </h2>
         
         <div className={styles.grid}>

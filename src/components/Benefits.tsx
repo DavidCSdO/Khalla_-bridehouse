@@ -5,20 +5,20 @@ import styles from "./Benefits.module.css";
 
 const benefits = [
   {
-    title: "Atendimento Exclusivo",
-    description: "Consultoria personalizada para ajudar na escolha do vestido ideal."
+    title: "Atendimento individual",
+    description: "Uma consultora dedicada do início ao fim. Sem pressa, sem fila."
   },
   {
-    title: "Qualidade Premium",
-    description: "Materiais selecionados e acabamento artesanal."
+    title: "Materiais nobres",
+    description: "Tecidos e acabamentos que você sente na pele — literalmente."
   },
   {
-    title: "Compra Segura",
-    description: "Pagamento protegido e acompanhamento do pedido em tempo real."
+    title: "Compra segura",
+    description: "Pagamento protegido e rastreio do pedido em tempo real."
   },
   {
-    title: "Entrega Nacional",
-    description: "Enviamos para todo o Brasil com segurança e cuidado."
+    title: "Entrega em todo o Brasil",
+    description: "Enviamos com o mesmo cuidado que tivemos ao costurar."
   }
 ];
 

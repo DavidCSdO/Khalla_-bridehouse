@@ -6,8 +6,8 @@ import styles from "./Stats.module.css";
 const statsData = [
   { value: "3.000+", label: "vestidos entregues" },
   { value: "98%", label: "de satisfação" },
-  { value: "15", label: "coleções exclusivas" },
-  { value: "Nacional", label: "atendimento no Brasil" }
+  { value: "15", label: "coleções lançadas" },
+  { value: "Nacional", label: "envio para todo o Brasil" }
 ];
 
 export default function Stats() {
@@ -36,7 +36,7 @@ export default function Stats() {
     <section ref={sectionRef} className={styles.section}>
       <div className={styles.wrapper}>
         <h2 className={`${styles.title} ${isVisible ? styles.visible : ""}`}>
-          Números que refletem nossa <span className={styles.highlight}>dedicação.</span>
+          Em <span className={styles.highlight}>números.</span>
         </h2>
         
         <div className={styles.grid}>

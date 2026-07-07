@@ -1,7 +1,7 @@
 .section {
   width: 100%;
   background-color: var(--color-charcoal);
-  padding: 100px 0;
+  padding: 120px 0;
   position: relative;
 }
 
@@ -13,7 +13,7 @@
 
 .title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
   font-weight: 400;
   color: var(--color-cream);
   text-align: center;
@@ -30,13 +30,13 @@
 
 .highlight {
   font-style: italic;
-  color: #F1C6DD; /* Pink contrast on dark background */
+  color: var(--color-cream);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 48px;
 }
 
 .statCard {
@@ -56,21 +56,20 @@
 
 .value {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 5vw, 4.5rem);
-  font-weight: 300;
-  font-style: italic;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 400;
   color: var(--color-cream);
   margin-bottom: 12px;
   line-height: 1;
 }
 
 .label {
-  font-family: var(--font-sans);
-  font-size: 1rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
   font-weight: 400;
-  color: rgba(245, 242, 237, 0.7); /* Cream with opacity */
+  color: rgba(245, 242, 237, 0.5);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
 }
 
 @media (max-width: 900px) {

@@ -7,7 +7,7 @@ const categories = [
     image: "/MN1.jpg",
     text: (
       <>
-        - Linhas limpas, sofisticação <span className={styles.highlight}>e leveza.</span>
+        Silhueta reduzida. <span className={styles.highlight}>Presença inteira.</span>
       </>
     ),
   },
@@ -16,8 +16,8 @@ const categories = [
     image: "/LF1.jpg",
     text: (
       <>
-        - Modelagens <span className={styles.highlight}>contemporâneas para</span>{" "}
-        noivas autênticas.
+        Cortes atuais para quem <span className={styles.highlight}>não segue</span>{" "}
+        tendências — cria as suas.
       </>
     ),
   },
@@ -26,8 +26,8 @@ const categories = [
     image: "/ACS1.jpg",
     text: (
       <>
-        - Véus, luvas, joias e <span className={styles.highlight}>detalhes que</span>{" "}
-        completam o visual.
+        Véus, luvas, joias. <span className={styles.highlight}>O toque</span>{" "}
+        que fecha o look.
       </>
     ),
   },

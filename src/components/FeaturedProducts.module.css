@@ -1,7 +1,7 @@
 .section {
   width: 100%;
   background-color: var(--color-cream);
-  padding: 120px 0;
+  padding: var(--space-2xl) 0;
   position: relative;
 }
 
@@ -13,7 +13,7 @@
 
 .header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
@@ -26,31 +26,27 @@
 
 .title {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 3vw, 2.8rem);
   font-weight: 400;
   color: var(--color-charcoal);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .highlight {
   font-style: italic;
-  background: linear-gradient(to right, #C54B8C 0%, #E082A8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-accent);
 }
 
 .subtitle {
-  font-family: var(--font-sans);
-  font-size: 1.1rem;
-  color: var(--color-charcoal);
-  opacity: 0.8;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text-light);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 32px;
 }
 
 .productCard {
@@ -70,23 +66,21 @@
   position: relative;
   width: 100%;
   aspect-ratio: 3 / 4;
-  border-radius: 12px;
+  border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   cursor: pointer;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s var(--ease-smooth);
+  transition: opacity 0.4s var(--ease-smooth);
 }
 
 .imageWrapper:hover .overlay {
@@ -94,29 +88,36 @@
 }
 
 .discoverButton {
-  background-color: #F1C6DD;
+  background: #fff;
   color: var(--color-charcoal);
-  font-family: var(--font-sans);
-  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
   font-weight: 500;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 12px 24px;
-  border-radius: 999px;
+  padding: 10px 24px;
   border: none;
   cursor: pointer;
-  transform: translateY(10px);
-  transition: transform 0.3s var(--ease-smooth);
+  transform: translateY(8px);
+  opacity: 0;
+  transition: all 0.4s var(--ease-smooth);
 }
 
 .imageWrapper:hover .discoverButton {
   transform: translateY(0);
+  opacity: 1;
+}
+
+.discoverButton:hover {
+  background: var(--color-charcoal);
+  color: #fff;
 }
 
 .productTitle {
   font-family: var(--font-display);
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.15rem;
+  font-weight: 400;
   font-style: italic;
   color: var(--color-charcoal);
   text-align: center;
@@ -131,6 +132,6 @@
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 48px;
   }
 }

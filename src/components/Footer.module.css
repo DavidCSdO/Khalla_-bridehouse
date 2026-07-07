@@ -19,22 +19,21 @@
 }
 
 .brandInfo {
-  max-width: 400px;
+  max-width: 360px;
 }
 
 .logo {
   font-family: var(--font-display);
-  font-size: 2rem;
-  font-style: italic;
-  font-weight: 500;
-  margin-bottom: 24px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .description {
-  font-family: var(--font-sans);
-  font-size: 1rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
   line-height: 1.6;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .linksGrid {
@@ -45,25 +44,25 @@
 .linkColumn {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .columnTitle {
-  font-family: var(--font-sans);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   margin-bottom: 8px;
-  opacity: 0.5;
+  opacity: 0.35;
 }
 
 .link {
-  font-family: var(--font-sans);
-  font-size: 1rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
   color: var(--color-cream);
   text-decoration: none;
-  opacity: 0.8;
+  opacity: 0.6;
   transition: opacity 0.3s ease;
 }
 
@@ -72,15 +71,15 @@
 }
 
 .bottomSection {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 40px;
   text-align: center;
 }
 
 .copyright {
-  font-family: var(--font-sans);
-  font-size: 0.9rem;
-  opacity: 0.5;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  opacity: 0.35;
 }
 
 @media (max-width: 768px) {
@@ -88,7 +87,7 @@
     flex-direction: column;
     gap: 60px;
   }
-  
+
   .linksGrid {
     flex-direction: column;
     gap: 40px;

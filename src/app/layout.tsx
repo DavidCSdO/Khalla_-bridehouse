@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kallah — Artigos para Noivas",
+  title: "Kallah — Vestidos de Noiva",
   description:
-    "Kallah Bridehouse: elegância que atravessa gerações. Vestidos de noiva, acessórios e coleções exclusivas para o dia mais especial da sua vida.",
+    "Kallah Bride House. Vestidos de noiva e acessórios com identidade própria. Coleções pensadas para quem valoriza o silêncio dos bons tecidos.",
 };
 
 export default function RootLayout({

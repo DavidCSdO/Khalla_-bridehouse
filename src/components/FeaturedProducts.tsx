@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import styles from "./FeaturedProducts.module.css";
 
 const featuredImages = [
-  { src: "/CL3.jpg", title: "Elegance Clássico" },
-  { src: "/LF3.jpg", title: "Modern Romance" },
-  { src: "/MN3.jpg", title: "Minimalista Chic" }
+  { src: "/CL3.jpg", title: "Clássico" },
+  { src: "/LF3.jpg", title: "Moderno" },
+  { src: "/MN3.jpg", title: "Minimalista" }
 ];
 
 export default function FeaturedProducts() {
@@ -37,9 +38,9 @@ export default function FeaturedProducts() {
       <div className={styles.wrapper}>
         <div className={`${styles.header} ${isVisible ? styles.visible : ""}`}>
           <h2 className={styles.title}>
-            Os favoritos da <span className={styles.highlight}>coleção.</span>
+            Os mais <span className={styles.highlight}>procurados.</span>
           </h2>
-          <p className={styles.subtitle}>Conheça os vestidos mais desejados pelas nossas clientes.</p>
+          <p className={styles.subtitle}>Três estilos. Uma mesma atenção ao que importa.</p>
         </div>
 
         <div className={styles.grid}>
@@ -58,7 +59,7 @@ export default function FeaturedProducts() {
                   sizes="(max-width: 768px) 100vw, 33vw" 
                 />
                 <div className={styles.overlay}>
-                  <button className={styles.discoverButton}>Descobrir</button>
+                  <Link href="/dresses" className={styles.discoverButton}>Ver mais</Link>
                 </div>
               </div>
               <h3 className={styles.productTitle}>{product.title}</h3>

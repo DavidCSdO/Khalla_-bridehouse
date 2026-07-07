@@ -68,7 +68,7 @@ export default function Collection() {
     <section ref={sectionRef} className={styles.section}>
       <div className={styles.wrapper}>
         <h2 className={`${styles.title} ${isVisible ? styles.visible : ""}`}>
-          Nossa coleção
+          A coleção
         </h2>
 
         <div className={styles.mainContent}>
@@ -89,16 +89,15 @@ export default function Collection() {
           </div>
 
           <div className={`${styles.rightText} ${isVisible ? styles.visible : ""}`}>
-            Criada para<br />
-            mulheres que<br />
-            desejam viver<br />
-            momentos<br />
-            extraordinários.
+            Para quem<br />
+            entende que o<br />
+            vestido certo<br />
+            muda tudo.
           </div>
         </div>
 
         <p className={`${styles.bottomText} ${isVisible ? styles.visible : ""}`}>
-          Cada peça é desenvolvida pensando na beleza dos pequenos detalhes. Tecidos cuidadosamente <span className={styles.highlight}>selecionados, cortes precisos e acabamentos refinados fazem parte de cada coleção apresentada pela Étoile Bridal.</span>
+          Tecidos com caráter. Cortes com intenção. <span className={styles.highlight}>O que não se vê à primeira vista é justamente o que faz a diferença em cada peça da Kallah.</span>
         </p>
       </div>
     </section>

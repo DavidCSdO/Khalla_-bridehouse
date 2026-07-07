@@ -41,13 +41,13 @@ export default function About() {
           </div>
           <div className={`${styles.textWrapper} ${isVisible ? styles.visible : ""}`}>
             <h2 className={styles.title}>
-              A beleza está na <span className={styles.highlight}>simplicidade.</span>
+              Menos é sempre <span className={styles.highlight}>mais.</span>
             </h2>
             <p className={styles.description}>
-              Na Étoile Bridal acreditamos que elegância não precisa ser exagerada. Nossos vestidos unem tradição e modernidade em peças cuidadosamente desenhadas para valorizar a personalidade de cada noiva.
+              A Kallah existe para quem quer se sentir bem sem esforço. Nossos vestidos têm tradição na costura e um olhar contemporâneo no design.
             </p>
             <p className={styles.description}>
-              Cada coleção nasce da inspiração em histórias reais, arquitetura clássica e na delicadeza dos momentos que tornam um casamento inesquecível.
+              Nossas coleções nascem de histórias reais, da arquitetura clássica e da convicção de que o bom gosto não grita.
             </p>
           </div>
         </div>

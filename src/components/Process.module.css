@@ -1,7 +1,7 @@
 .section {
   width: 100%;
   background-color: var(--color-cream);
-  padding: 120px 0;
+  padding: var(--space-2xl) 0;
   position: relative;
 }
 
@@ -13,11 +13,11 @@
 
 .title {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  font-size: clamp(2rem, 3vw, 2.5rem);
   font-weight: 400;
   color: var(--color-charcoal);
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
@@ -30,16 +30,13 @@
 
 .highlight {
   font-style: italic;
-  background: linear-gradient(to right, #C54B8C 0%, #E082A8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-accent);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 48px;
 }
 
 .card {
@@ -51,17 +48,6 @@
   position: relative;
 }
 
-/* Subtle connecting line */
-.card:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 35px;
-  right: -20px;
-  width: 40px;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .card.visible {
   opacity: 1;
   transform: translateY(0);
@@ -69,39 +55,34 @@
 
 .number {
   font-family: var(--font-display);
-  font-size: 3rem;
-  font-weight: 300;
-  color: #C54B8C;
-  opacity: 0.3;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--color-charcoal);
+  opacity: 0.12;
   margin-bottom: 20px;
-  font-style: italic;
   line-height: 1;
 }
 
 .cardTitle {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: var(--color-charcoal);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .cardDescription {
-  font-family: var(--font-sans);
-  font-size: 1.05rem;
-  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text);
   line-height: 1.6;
-  opacity: 0.8;
+  opacity: 0.65;
 }
 
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px 40px;
-  }
-  
-  .card:not(:last-child)::after {
-    display: none;
+    gap: 60px 48px;
   }
 }
 
@@ -109,10 +90,5 @@
   .grid {
     grid-template-columns: 1fr;
     gap: 50px;
-  }
-  
-  .card {
-    align-items: center;
-    text-align: center;
   }
 }

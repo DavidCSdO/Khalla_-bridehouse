@@ -6,23 +6,23 @@ import styles from "./Process.module.css";
 const processSteps = [
   {
     number: "01",
-    title: "Escolha dos tecidos",
-    description: "Selecionamos materiais premium que unem conforto, leveza e sofisticação."
+    title: "Matéria-prima",
+    description: "Tecidos importados, escolhidos pelo toque e pelo caimento."
   },
   {
     number: "02",
-    title: "Design",
-    description: "Cada modelo nasce a partir de estudos de tendências internacionais aliados à elegância atemporal."
+    title: "Desenho",
+    description: "Cada modelo parte de referências internacionais e passa pelo nosso filtro estético."
   },
   {
     number: "03",
-    title: "Produção",
-    description: "Cada vestido passa por rigorosos processos de acabamento antes de chegar até você."
+    title: "Confecção",
+    description: "Costura feita por quem entende que a diferença está nos milímetros."
   },
   {
     number: "04",
     title: "Entrega",
-    description: "Embalagem premium e acompanhamento completo até o recebimento."
+    description: "Embalagem à altura da peça. Rastreio completo até sua porta."
   }
 ];
 
@@ -52,7 +52,7 @@ export default function Process() {
     <section ref={sectionRef} className={styles.section}>
       <div className={styles.wrapper}>
         <h2 className={`${styles.title} ${isVisible ? styles.visible : ""}`}>
-          Como criamos cada <span className={styles.highlight}>coleção</span>
+          Do tecido ao <span className={styles.highlight}>vestido</span>
         </h2>
         
         <div className={styles.grid}>

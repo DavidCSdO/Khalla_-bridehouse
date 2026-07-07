@@ -31,11 +31,11 @@ export default function Discover() {
       <div className={styles.wrapper}>
         {/* Buttons row — overlaps with the hero */}
         <div className={`${styles.buttons} ${isVisible ? styles.visible : ""}`}>
-          <Link href="/colecao" className={styles.button}>
-            Explorar Coleção
+          <Link href="/dresses" className={styles.button}>
+            Ver Coleção
           </Link>
           <Link href="/agendar" className={styles.button}>
-            Agendar Atendimento
+            Agendar Visita
           </Link>
         </div>
 
@@ -43,12 +43,11 @@ export default function Discover() {
         <div className={styles.content}>
           <div className={`${styles.textContainer} ${isVisible ? styles.visible : ""}`}>
             <p className={styles.textBlock}>
-              Descubra vestidos de noiva criados{" "}
-              <span className={styles.highlight}>para</span> transformar o seu
-              grande dia em <span className={styles.highlight}>uma</span>{" "}
-              lembrança inesquecível. Design contemporâneo, acabamento
-              impec<span className={styles.highlight}>ável</span> e detalhes
-              feitos para emocionar.
+              Vestidos de noiva com desenho{" "}
+              <span className={styles.highlight}>próprio</span>. Silhuetas
+              limpas, tecidos nobres e o tipo de{" "}
+              <span className={styles.highlight}>acabamento</span> que só se
+              percebe de per<span className={styles.highlight}>to.</span>
             </p>
           </div>
 

@@ -32,13 +32,14 @@ export default function Hero() {
           quality={100}
           sizes="100vw"
           style={{ objectFit: "cover" }}
+          unoptimized={true}
         />
 
       </div>
 
       <div className={styles.content}>
         <h1 className={`${styles.title} ${hasScrolled ? styles.visible : ""}`}>
-          <em>Elegância que atravessa <span className={styles.highlight}>gerações.</span></em>
+          <em>O vestido certo não precisa de <span className={styles.highlight}>explicação.</span></em>
         </h1>
       </div>
     </section>

@@ -30,21 +30,21 @@ export default function Newsletter() {
       <div className={styles.wrapper}>
         <div className={`${styles.content} ${isVisible ? styles.visible : ""}`}>
           <h2 className={styles.title}>
-            Inspire-se para o seu <span className={styles.highlight}>grande dia.</span>
+            Fique por <span className={styles.highlight}>dentro.</span>
           </h2>
           <p className={styles.description}>
-            Receba novidades, lançamentos exclusivos e conteúdos sobre tendências do universo bridal.
+            Novidades, lançamentos e bastidores direto no seu e-mail.
           </p>
           
           <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
             <input 
               type="email" 
-              placeholder="Digite seu melhor e-mail" 
+              placeholder="Seu melhor e-mail" 
               className={styles.input}
               required
             />
             <button type="submit" className={styles.button}>
-              Quero Receber
+              Inscrever
             </button>
           </form>
         </div>

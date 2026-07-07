@@ -5,14 +5,20 @@
   right: 0;
   z-index: 100;
   background: transparent;
-  transition: background 0.4s var(--ease-smooth);
+  transition: background 0.5s var(--ease-smooth), backdrop-filter 0.5s var(--ease-smooth);
+}
+
+.scrolled {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 36px;
   height: var(--nav-height);
@@ -20,8 +26,8 @@
 
 /* Logo */
 .logo {
-  font-family: "Playfair Display", serif;
-  font-size: 1.95rem;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--color-charcoal);
@@ -30,54 +36,40 @@
 }
 
 .logo:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .rightGroup {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 40px;
 }
 
 /* Navigation links */
 .links {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 36px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .link {
-  font-family: "Playfair Display", serif;
-  font-size: 1.2rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
   font-weight: 400;
-  letter-spacing: 0.03em;
-  color: #2E2E2E;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text);
   text-decoration: none;
   position: relative;
   padding: 4px 0;
-  transition: color 0.3s var(--ease-smooth);
-}
-
-.link::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: var(--color-charcoal);
-  transition: width 0.4s var(--ease-smooth);
+  transition: opacity 0.3s var(--ease-smooth);
 }
 
 .link:hover {
-  color: var(--color-charcoal);
-}
-
-.link:hover::after {
-  width: 100%;
+  opacity: 0.5;
 }
 
 /* Right actions */
@@ -96,30 +88,28 @@
   cursor: pointer;
   color: var(--color-text);
   padding: 6px;
-  transition: color 0.3s var(--ease-smooth), transform 0.3s var(--ease-smooth);
+  transition: opacity 0.3s var(--ease-smooth);
 }
 
 .cart:hover {
-  color: var(--color-charcoal);
-  transform: translateY(-1px);
+  opacity: 0.5;
 }
 
 .cta {
-  font-family: var(--font-nav);
-  font-size: 0.95rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
   text-decoration: none;
-  border: 1px solid #ffffff;
-  border-radius: 0;
-  padding: 8px 24px;
-  transition: background 0.4s var(--ease-smooth), color 0.4s var(--ease-smooth);
+  background: var(--color-charcoal);
+  padding: 10px 24px;
+  transition: opacity 0.3s var(--ease-smooth);
 }
 
 .cta:hover {
-  background: var(--color-charcoal);
-  color: #fff;
+  opacity: 0.75;
 }
 
 /* Hamburger (mobile only) */
@@ -163,11 +153,10 @@
   top: var(--nav-height);
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.97);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--color-border);
-  padding: 24px 40px 32px;
+  padding: 32px 40px 40px;
   transform: translateY(-10px);
   opacity: 0;
   pointer-events: none;
@@ -187,7 +176,6 @@
     transform: translateY(-10px);
     opacity: 0;
   }
-
   to {
     transform: translateY(0);
     opacity: 1;
@@ -200,42 +188,45 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0;
 }
 
 .mobileLink {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
   font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--color-charcoal);
   text-decoration: none;
-  padding: 12px 0;
+  padding: 16px 0;
   display: block;
   border-bottom: 1px solid var(--color-border);
-  transition: padding-left 0.3s var(--ease-smooth), color 0.3s var(--ease-smooth);
+  transition: opacity 0.3s var(--ease-smooth);
 }
 
 .mobileLink:hover {
-  padding-left: 12px;
-  color: var(--color-rose);
+  opacity: 0.5;
 }
 
 .mobileLinkCta {
   border: none;
-  margin-top: 16px;
+  margin-top: 24px;
   text-align: center;
   background: var(--color-charcoal);
   color: #fff;
-  padding: 16px;
+  padding: 14px;
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: opacity 0.3s var(--ease-smooth);
 }
 
 .mobileLinkCta:hover {
   padding-left: 0;
-  background: var(--color-text);
+  opacity: 0.75;
 }
 
 @media (max-width: 900px) {
@@ -258,6 +249,6 @@
 
 @media (max-width: 600px) {
   .logo {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
